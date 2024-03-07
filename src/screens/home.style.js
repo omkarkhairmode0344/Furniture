@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
   imageStyle: {
     height: 20,
     width: 20,
+    tintColor: COLORS.black,
   },
   textLocationStyle: {
     fontFamily: 'Poppins-SemiBold',
@@ -29,10 +30,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'green',
+    zIndex: 999,
   },
   cartNumber: {
     fontFamily: 'Poppins-Regular',
-    fontSize: 10,
+    fontSize: 6,
     fontWeight: '600',
     color: COLORS.lightWhite,
   },

@@ -1,17 +1,7 @@
 import {StyleSheet} from 'react-native';
-import {COLORS, SIZES} from '../../constants';
+import {COLORS, SIZES} from '../constants';
 
 const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-  },
-  welcomeText: (color, marginTop) => ({
-    fontFamily: 'Poppins-Bold',
-    fontSize: 28,
-    marginHorizontal: SIZES.small,
-    marginTop: marginTop,
-    color: color,
-  }),
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -25,13 +15,13 @@ const styles = StyleSheet.create({
   imageSearchStyle: {
     height: 20,
     width: 20,
-    marginHorizontal: 10,
-    tintColor: COLORS.gray,
+    tintColor: COLORS.offwhite,
   },
   imageCameraStyle: {
     height: 20,
     width: 20,
-    tintColor: COLORS.offwhite,
+    marginHorizontal: 10,
+    tintColor: COLORS.gray,
   },
   searchWrappper: {
     flex: 1,
