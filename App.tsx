@@ -1,24 +1,22 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import BottomTabNavigation from './src/navigation/BottomTabNavigation';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.customFont}>Omkar</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Bottom Tab"
+          component={BottomTabNavigation}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  customFont: {
-    fontFamily: 'Poppins-Bold',
-    fontSize: 20,
-  },
-});
 
 export default App;
