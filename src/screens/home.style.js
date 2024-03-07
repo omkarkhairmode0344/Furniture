@@ -1,15 +1,40 @@
 import {StyleSheet} from 'react-native';
-import { COLORS, SIZES, SHADOWS } from '../constants';
+import {COLORS, SIZES} from '../constants';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+    marginHorizontal: 22,
+    marginTop: SIZES.small,
+  },
+  subContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
-  fontStyle: {
-    fontFamily: 'Poppins-Bold',
-    fontSize: 20,
+  imageStyle: {
+    height: 20,
+    width: 20,
+  },
+  textLocationStyle: {
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: SIZES.medium,
+    color: COLORS.gray,
+  },
+  cartCount: {
+    position: 'absolute',
+    bottom: 12,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'green',
+  },
+  cartNumber: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 10,
+    fontWeight: '600',
+    color: COLORS.lightWhite,
   },
 });
 

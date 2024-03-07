@@ -20,7 +20,6 @@ const BottomTabNavigation = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          height: 60,
           elevation: 0,
         },
       }}>
@@ -32,8 +31,8 @@ const BottomTabNavigation = () => {
             <Image
               source={require('../assests/images/home.png')}
               style={{
-                width: 24,
-                height: 24,
+                width: 20,
+                height: 20,
                 resizeMode: 'contain',
                 tintColor: focused ? COLORS.primary : COLORS.gray2,
               }}></Image>
@@ -48,8 +47,8 @@ const BottomTabNavigation = () => {
             <Image
               source={require('../assests/images/search.png')}
               style={{
-                width: 24,
-                height: 24,
+                width: 20,
+                height: 20,
                 resizeMode: 'contain',
                 tintColor: focused ? COLORS.primary : COLORS.gray2,
               }}></Image>
@@ -64,8 +63,8 @@ const BottomTabNavigation = () => {
             <Image
               source={require('../assests/images/profile.png')}
               style={{
-                width: 24,
-                height: 24,
+                width: 20,
+                height: 20,
                 resizeMode: 'contain',
                 tintColor: focused ? COLORS.primary : COLORS.gray2,
               }}></Image>
