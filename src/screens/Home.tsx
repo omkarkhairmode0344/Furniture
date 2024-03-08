@@ -1,9 +1,10 @@
 import React from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 import styles from './home.style';
 import Welcome from '../components/home/Welcome';
 import Carousel from '../components/home/Carousel';
 import Headings from '../components/home/Headings';
+import ProductRow from '../components/product/ProductRow';
 
 const Home = () => {
   return (
@@ -26,9 +27,12 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <Welcome></Welcome>
-      <Carousel></Carousel>
-      <Headings></Headings>
+      <ScrollView>
+        <Welcome></Welcome>
+        <Carousel></Carousel>
+        <Headings></Headings>
+        <ProductRow></ProductRow>
+      </ScrollView>
     </View>
   );
 };

@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
   },
   welcomeText: (color, marginTop) => ({
     fontFamily: 'Poppins-Bold',
-    fontSize: 28,
+    fontSize: 22,
     marginHorizontal: SIZES.small,
     marginTop: marginTop,
     color: color,
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginHorizontal: SIZES.small,
-    marginVertical: SIZES.medium,
+    marginBottom: SIZES.medium,
     borderRadius: SIZES.medium,
     backgroundColor: COLORS.secondary,
     height: 50,

@@ -12,7 +12,7 @@ const Carousel = () => {
   return (
     <SliderBox
       images={images}
-      ImageComponentStyle={{borderRadius: 15, width: '93%'}}
+      ImageComponentStyle={{borderRadius: 15, width: '93%', height:180}}
       dotColor={COLORS.primary}
       inactiveDotColor={COLORS.secondary}
       autoplay

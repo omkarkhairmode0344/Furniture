@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {SIZES} from '../../constants';
+import {COLORS, SIZES} from '../../constants';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: SIZES.medium,
+    margin: SIZES.medium,
     marginHorizontal: 12,
   },
   header: {
@@ -12,12 +12,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   headerTitle: {
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: 'Poppins-Bold',
     fontSize: SIZES.medium,
   },
   imageStyle: {
     height: 20,
     width: 20,
+    tintColor:COLORS.primary
   },
 });
 
