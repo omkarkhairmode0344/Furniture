@@ -11,7 +11,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Bottom Tab"
+          name="BottomTab"
           component={BottomTabNavigation}
           options={{headerShown: false}}
         />

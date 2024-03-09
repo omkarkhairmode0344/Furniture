@@ -4,7 +4,7 @@ import {COLORS, SIZES} from '../../constants';
 const styles = StyleSheet.create({
   container: {
     width: 150,
-    height: 240,
+    height: 230,
     backgroundColor: COLORS.secondary,
     borderRadius: SIZES.medium,
   },
