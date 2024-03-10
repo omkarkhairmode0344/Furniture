@@ -1,6 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {COLORS, SIZES} from '../constants';
+import ProfileHead from '../components/profile/ProfileHead';
 
 const Profile = () => {
   return (
@@ -13,8 +14,28 @@ const Profile = () => {
           source={require('../assests/images/profile.jpeg')}
           style={styles.profileimage}></Image>
         <Text style={styles.profiletitle}>John Doe</Text>
-        <View>
-          <Text style={styles.profilesubContainer}>johndoe@example.com</Text>
+        <View style={styles.profilesubContainer}>
+          <Text style={styles.profilesubtitle}>johndoe@example.com</Text>
+        </View>
+        <View style={{marginTop: 15}}>
+          <ProfileHead
+            title="Favorites"
+            source={require('../assests/images/favorites.png')}></ProfileHead>
+          <ProfileHead 
+          title="Orders"
+          source={require('../assests/images/delivery-truck.png')}></ProfileHead>
+          <ProfileHead 
+          title="Cart"
+          source={require('../assests/images/cart.png')}></ProfileHead>
+          <ProfileHead 
+          title="Clear Cache"
+          source={require('../assests/images/clear-data.png')}></ProfileHead>
+          <ProfileHead 
+          title="Delete Account"
+          source={require('../assests/images/delete-account.png')}></ProfileHead>
+          <ProfileHead 
+          title="Logout"
+          source={require('../assests/images/out.png')}></ProfileHead>
         </View>
       </View>
     </View>
@@ -31,8 +52,8 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   profileimage: {
-    height: 150,
-    width: 150,
+    height: 120,
+    width: 120,
     marginTop: -75,
     borderRadius: 75,
   },
@@ -44,12 +65,10 @@ const styles = StyleSheet.create({
   profiletitle: {
     fontFamily: 'Poppins-Bold',
     fontSize: SIZES.medium,
-    marginTop: 5,
   },
   profilesubtitle: {
     fontFamily: 'Poppins-Regular',
     fontSize: SIZES.small,
-    marginTop: 5,
   },
   profilesubContainer: {
     backgroundColor: COLORS.secondary,
