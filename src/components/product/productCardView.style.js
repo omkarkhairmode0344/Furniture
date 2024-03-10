@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native';
 import {COLORS, SIZES} from '../../constants';
 
 const styles = StyleSheet.create({
+  mainContainer: {
+    marginRight:20
+  },
   container: {
     width: 150,
     height: 230,
@@ -37,15 +40,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Bold',
     fontSize: SIZES.small,
   },
-  plusBtn:{
-    height:20,
-    width:20,
+  plusBtn: {
+    height: 20,
+    width: 20,
   },
-  addBtn:{
-    position:'absolute',
-    bottom:SIZES.small,
-    right:SIZES.small,
-  }
+  addBtn: {
+    position: 'absolute',
+    bottom: SIZES.small,
+    right: SIZES.small,
+  },
 });
 
 export default styles;

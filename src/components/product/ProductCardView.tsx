@@ -3,10 +3,11 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import styles from './productCardView.style';
 import {useNavigation} from '@react-navigation/native';
 
-const ProductCardView = () => {
+const ProductCardView = ({item}) => {
   const navigation = useNavigation();
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails")}>
+    <TouchableOpacity style={styles.mainContainer}
+      onPress={() => navigation.navigate("ProductDetails", {item})}>
       <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image
@@ -15,12 +16,12 @@ const ProductCardView = () => {
         </View>
         <View style={styles.details}>
           <Text style={styles.title} numberOfLines={1}>
-            Product
+            {item.name}
           </Text>
           <Text style={styles.supplier} numberOfLines={1}>
-            Supplier
+            {item.supplier}
           </Text>
-          <Text style={styles.prize}>$1650</Text>
+          <Text style={styles.prize}>${item.prize}</Text>
         </View>
         <TouchableOpacity style={styles.addBtn}>
           <Image

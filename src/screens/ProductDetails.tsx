@@ -2,8 +2,12 @@ import React, {useState} from 'react';
 import {Text, View, Image, TouchableOpacity} from 'react-native';
 import styles from './productDetails.style';
 import {COLORS, SIZES} from '../constants';
+import {useRoute} from '@react-navigation/native';
 
 const ProductDetails = ({navigation}) => {
+  const route = useRoute();
+  const {item} = route.params;
+
   const [count, setCount] = useState(1);
 
   const increment = () => {
@@ -33,9 +37,9 @@ const ProductDetails = ({navigation}) => {
         style={styles.image}></Image>
       <View style={styles.details}>
         <View style={styles.titleRow}>
-          <Text style={styles.title}>Product</Text>
+          <Text style={styles.title}>{item.name}</Text>
           <View style={styles.prizeWrapper}>
-            <Text style={styles.prize}>$ 444.03</Text>
+            <Text style={styles.prize}>${item.prize}</Text>
           </View>
         </View>
         <View style={styles.ratingRow}>
@@ -72,14 +76,7 @@ const ProductDetails = ({navigation}) => {
         </View>
         <View style={styles.descriptionWrapper}>
           <Text style={styles.descriptionText}>Description</Text>
-          <Text style={styles.descriptionSubText}>
-            People have been using natural objects, such as tree stumps, rocks
-            and moss, as furniture since the beginning of human civilization and
-            continues today in some households/campsites. Archaeological
-            research shows that from around 30,000 years ago, people started to
-            construct and carve their own furniture, using wood, stone, and
-            animal bones.
-          </Text>
+          <Text style={styles.descriptionSubText}>{item.description}</Text>
         </View>
         <View style={{marginTop: SIZES.small, marginHorizontal: SIZES.large}}>
           <View style={styles.location}>
@@ -104,7 +101,11 @@ const ProductDetails = ({navigation}) => {
           <TouchableOpacity onPress={() => {}} style={styles.addCart}>
             <Image
               source={require('../assests/images/shopping-bag.png')}
-              style={{height: 20, width: 20, tintColor: COLORS.lightWhite}}></Image>
+              style={{
+                height: 20,
+                width: 20,
+                tintColor: COLORS.lightWhite,
+              }}></Image>
           </TouchableOpacity>
         </View>
       </View>
