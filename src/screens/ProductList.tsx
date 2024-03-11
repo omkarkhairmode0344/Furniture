@@ -22,7 +22,7 @@ const ProductList = ({navigation}) => {
             source={require('../assests/images/back..png')}
             style={styles.image}></Image>
         </TouchableOpacity>
-        <Text style={styles.productTitle}>Products</Text>
+        <Text style={styles.productTitle}>All Products</Text>
       </View>
       <FlatList
         data={ProductData}

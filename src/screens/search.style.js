@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.medium,
     backgroundColor: COLORS.secondary,
     height: 50,
+    position:'absolute',
+    left:0,
+    right:0,
+    top:0
   },
   imageSearchStyle: {
     height: 20,

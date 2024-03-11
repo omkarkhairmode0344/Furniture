@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     color: COLORS.lightWhite,
     fontFamily: 'Poppins-SemiBold',
     paddingHorizontal: SIZES.small,
+    fontSize: 15,
   },
   image: {
     height: 20,
