@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Product01",
+    "supplier": "Supplier01",
+    "prize": 111.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 2,
+    "name": "Product02",
+    "supplier": "Supplier02",
+    "prize": 222.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 3,
+    "name": "Product03",
+    "supplier": "Supplier03",
+    "prize": 333.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 4,
+    "name": "Product04",
+    "supplier": "Supplier04",
+    "prize": 444.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 5,
+    "name": "Product05",
+    "supplier": "Supplier05",
+    "prize": 555.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 6,
+    "name": "Product06",
+    "supplier": "Supplier06",
+    "prize": 666.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 7,
+    "name": "Product07",
+    "supplier": "Supplier07",
+    "prize": 777.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 8,
+    "name": "Product08",
+    "supplier": "Supplier08",
+    "prize": 888.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 9,
+    "name": "Product09",
+    "supplier": "Supplier09",
+    "prize": 999.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  },
+  {
+    "id": 10,
+    "name": "Product10",
+    "supplier": "Supplier10",
+    "prize": 1111.99,
+    "description": "People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones."
+  }
+]
