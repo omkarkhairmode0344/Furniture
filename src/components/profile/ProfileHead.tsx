@@ -10,11 +10,8 @@ import {
 import {COLORS, SIZES} from '../../constants';
 
 const ProfileHead = props => {
-  const btnPressed = () => {
-    Alert.alert('Kindly Login First');
-  };
   return (
-    <TouchableOpacity onPress={btnPressed}>
+    <TouchableOpacity onPress={props.onPress}>
       <View style={styles.container}>
         <Image source={props.source} style={styles.image}></Image>
         <Text style={styles.text}>{props.title}</Text>
